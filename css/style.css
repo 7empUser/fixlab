@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #89C7F4;
+    min-height: 100vh;
+}
+h1 {
+    font-size: 64px;
+    color: #0d99ff;
+}
+h3 {
+    display: inline-block;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+a:active {
+    color: black;
+    text-decoration: none;
+}
+p {
+    text-indent: 10px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    background-color: #033e69;
+    border-radius: 0 0 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    padding: 10px 20px 0 20px;
+    color: #fff;
+}
+header>div>p {
+    position: relative;
+    margin-top: -15px;
+    z-index: 1;
+}
+header>div>a {
+    position: relative;
+}
+.logo {
+    height: 70px;
+}
+.mobileNumber {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.mobileNumber>div {
+    display: inline-block;
+    border-bottom: #5b88df 2px solid;
+    padding: 10px 10px 0 0;
+}
+.mobileNumber div {
+    min-width: 140px;
+}
+.languageList li {
+    z-index: 2;
+    margin: 0;
+}
+.languageListItem {
+    background-color: #211e1f;
+    padding: 5px 10px 5px 10px;
+}
+.languageList img {
+    width: 50px;
+    height: 32px;
+}
+.languageList p {
+    display: inline-block;
+    font-size: 30px;
+    vertical-align: top;
+    color: #fff;
+}   
+nav button {
+    display: none;
+}
+.headerList {
+    display: flex;
+    white-space: nowrap;
+    position: relative;
+    font-size: 24px;
+    margin-top: 10px;
+}
+header li {
+    position: relative;
+    list-style: none;
+    margin: 10px;
+}
+header ul ul {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+}
+header ul ul div {
+    border-radius: 10px;
+}
+header ul li:hover>ul {
+    display: inherit;
+}
+nav ul ul li {
+    min-width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 10px;
+    transition: 1s linear;
+    text-align: center;
+}
+nav>ul>li>a {
+    color: #fff;
+}
+nav>ul>li>a:hover {
+    color: #fff;
+}
+nav>ul>li>a:active {
+    color: #fff;
+}
+.headerListForPhone {
+    display: none;
+}
+
+/* Main */
+
+.belowHeaderDiv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 45px;
+    margin: 20px;
+    padding: 50px;
+}
+.belowHeaderDiv img {
+    height: 300px;
+}
+.subDiv {
+    background-color: #033e69;
+    border-radius: 10px;
+    text-align: center;
+}
+.service {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 30px 0 30px 0;
+    margin-bottom: 40px;
+}
+.subDiv>h2 {
+    padding-top: 20px;
+    color: #fff;
+}
+.serviceDiv {
+    background-color: #dbf0ff;
+    margin: 2%;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.serviceImg {
+    width: 80%;
+    margin: 10px 0 10px 0;
+}
+.advantages {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0 30px 0;
+}
+.advantagesDiv {
+    background-color: #dbf0ff;
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px;
+}
+.advantagesDiv div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 24px;
+}
+.advantagesDiv ul {
+    text-align: left;
+}
+.advantagesDiv ul li {
+    font-size: 16px;
+}
+.formDiv {
+    display: flex;
+    background-color: #dbf0ff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+input {
+    background-color: #fbfbfb;
+    border: #b3b3b3 1px solid;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    margin: 10px 0;
+}
+select {
+    background-color: #fbfbfb;
+    border: #b3b3b3 1px solid;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    margin: 10px 0;
+}
+option {
+    background-color: #fbfbfb;
+    border: #b3b3b3 1px solid;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    margin: 10px 0;
+}
+textarea {
+    background-color: #fbfbfb;
+    border: #b3b3b3 1px solid;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    resize: vertical;
+    margin: 10px 0;
+}
+form>label>a {
+    text-decoration: none;
+    color: #0d99ff;
+}
+form>label>a:active {
+    text-decoration: none;
+    color: #0d99ff;
+}
+form>label>a:hover {
+    text-decoration: none;
+    color: #0d90ff;
+}
+input[type="submit"] {
+    background-color: #dcf3e7;
+    color: #14ae5c;
+    border: #14ae5c 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 25px;
+}
+.withWhiteBack {
+    background-color: #f5fbff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.contentToCenter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+table {
+    border: #97b6cc 1px solid;
+    border-radius: 10px;
+    border-collapse: collapse;
+    background-color: #bde3ff;
+}
+td {
+    border: #97b6cc 1px solid;
+    padding: 10px;
+}
+.aboutUsDiv {
+    display: flex;
+    justify-content: center;
+}
+.aboutUs {
+    border-radius: 20px;
+    width: 400px;
+    background-color: #bde3ff;
+    margin: 20px;
+    width: 300px;
+}
+.comments {
+    width: 100%;
+    height: 300px;
+}
+.shopDiv {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin: 0 20px 20px 20px;
+}
+.shopDiv nav ul li {
+    display: list-item;
+}
+.shopList {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+}
+.adressDiv {
+    width: 400px;
+    margin: 10px;
+}
+.paymentDiv {
+    width: 600px;
+    margin: 10px;
+}
+.catalogDiv {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+}
+.productDiv {
+    display: inline-block;
+    background-color: #fff;
+    width: auto;
+    padding: 40px;
+    border-radius: 20px;
+}
+.productServiceDiv {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    column-gap: 10px;
+    margin-top: 20px;
+}
+.productServiceDiv div {
+    border: 1px solid #c0e4ff;
+    border-radius: 10px;
+    background-color: #f5fbff;
+    text-align: center;
+    padding: 10px;
+}
+.productDiv h2 {
+    margin: 40px;
+}
+.shopHidden {
+    display: none;
+}
+
+/* Footer */
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #000;
+    color: #dbf0ff;
+    padding: 10px;
+    margin-top: auto;
+}
+footer>div h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+footer>div a {
+    text-decoration: underline;
+    color: #dbf0ff;
+}
+footer>div img {
+    height: 20px;
+}
+footer>div p {
+    margin-bottom: 3px;
+}
+footer>div a:active {
+    text-decoration: underline;
+    color: #dbf0ff;
+}
+footer>div a:hover {
+    text-decoration: underline;
+    color: #dbf0ff;
+}
+
+@media screen and (max-width: 750px) {
+    
+    /* Header */
+
+    header {
+        grid-template-columns: 1fr;
+        padding: 0 10px 0 10px;
+        height: auto;
+    }
+    .search {
+        display: none;
+    }
+    .headerList {
+        display: none;
+        text-align: center;
+    }
+    .dropbtn {
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 20px;
+        background-color: #033e69;
+        border: none;
+        color: #fff;
+        font-size: 24px;
+        margin: 20px 0 20px 0;
+    }
+    .show {
+        display: block;
+    }
+    .headerListForPC {
+        display: none;
+    }
+    .headerListForPhone {
+        display: block;
+    }
+
+    /* Main */
+
+    .belowHeaderDiv {
+        font-size: 25px;
+    }
+    .belowHeaderDiv img {
+        display: none;
+    }
+    .service {
+        grid-template-columns: 1fr 1fr;
+    }
+    .advantages {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .advantagesDiv {
+        margin: 10px;
+    }
+    .deliweryForPhone {
+        display: block;
+    }
+    .deliweryForPhone table {
+        margin-bottom: 10px;
+    }
+    .adressDiv {
+        width: auto;
+    }
+    .paymentDiv {
+        width: auto;
+    }
+    .aboutUsDiv {
+        display: block;
+        margin: 0;
+    }
+    .aboutUs {
+        width: auto;
+        margin: 10px;
+    }
+    .comments {
+        height: 250px;
+    }
+    .shopDiv {
+        display: block;
+    }
+    .productDiv {
+        padding: 20px;
+    }
+    .productServiceDiv {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+    }
+
+    /* Footer */
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+    footer>div {
+        margin: 10px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+
+    /* Header */
+
+    header {
+        grid-template-columns: 2fr 3fr;
+        padding: 0 10px 0 10px;
+        height: auto;
+    }
+    .search {
+        display: none;
+    }
+    .headerList {
+        display: none;
+        text-align: center;
+    }
+    .dropbtn {
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 20px;
+        background-color: #033e69;
+        border: none;
+        color: #fff;
+        font-size: 24px;
+        height: auto;
+        padding: 10px;
+    }
+    .show {
+        display: block;
+    }
+
+    /* Main */
+
+    .belowHeaderDiv {
+        padding: 0;
+        margin: 0;
+        font-size: 30px;    
+    }
+    .belowHeaderDiv img {
+        height: 250px;
+    }
+    .service {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .advantagesDiv {
+        margin: 10px;
+        width: 220px;
+    }
+    .deliweryForPhone {
+        display: block;
+    }
+    .deliweryForPhone table {
+        margin-bottom: 10px;
+    }
+    .adressDiv {
+        width: auto;
+    }
+    .paymentDiv {
+        width: auto;
+    }
+    .aboutUsDiv {
+        display: block;
+        margin: 0;
+    }
+    .aboutUs {
+        width: auto;
+        margin: 10px;
+    }
+    .comments {
+        height: 250px;
+    }
+    .shopDiv {
+        display: block;
+    }
+    .shopDiv nav {
+        text-align: center;
+    }
+    .productDiv {
+        padding: 30px;
+    }
+    .productServiceDiv {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 10px;
+    }
+
+    /* Footer */
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+    footer>div {
+        margin: 10px;
+        text-align: center;
+    }
+}
